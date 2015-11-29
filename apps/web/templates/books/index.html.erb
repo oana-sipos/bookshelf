@@ -6,9 +6,15 @@
       <div class="book">
         <h3><%= book.title %></h3>
         <p><%= book.author %></p>
+        <p><%= book.title_length %></p>
+        <p><%= link_to 'Delete', routes.book_path, method: 'delete' %></p>
       </div>
     <% end %>
   <% else %>
     <p class="placeholder">There are no books yet.</p>
   <% end %>
+
+  <%= authors_names %>
+
+  <a href="/books/new">Add a new book</a>
 </div>

@@ -1,6 +1,7 @@
 require 'lotus/model'
 require 'lotus/mailer'
 require 'dotenv'
+require 'pry'
 Dotenv.load
 Dir["#{ __dir__ }/bookshelf/**/*.rb"].each { |file| require_relative file }
 

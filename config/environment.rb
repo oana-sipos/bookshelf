@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'lotus/setup'
+require 'pry'
 require_relative '../lib/bookshelf'
 require_relative '../apps/web/application'
 

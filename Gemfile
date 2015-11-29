@@ -8,6 +8,7 @@ gem 'lotus-model', '~> 0.5'
 gem 'dotenv'
 
 gem 'pg'
+gem 'pry'
 
 group :test do
   gem 'minitest'
