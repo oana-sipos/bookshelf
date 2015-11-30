@@ -6,7 +6,7 @@ module Web::Views::Books
       Kernel.puts '-'*30
       Kernel.puts "custom books"
       Kernel.puts '-'*30
-      Kernel.pp @locals
+      Kernel.pp @locals[:books]
       @locals[:books]
     end
 
