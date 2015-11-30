@@ -4,9 +4,9 @@
   <% if books.any? %>
     <% books.each do |book| %>
       <div class="book">
-        <h3><%= book.title %></h3>
-        <p><%= book.author %></p>
-        <p><%= book.title_length %></p>
+        <h3>Title: <%= book.title %></h3>
+        <p>Author: <%= book.author %></p>
+        <p>Title length: <%= book.title_length %></p>
         <%= form_for :book, routes.book_path(id: book.id), method: :delete do
             submit 'Delete'
         end %>
@@ -16,7 +16,6 @@
     <p class="placeholder">There are no books yet.</p>
   <% end %>
 
-  <%= authors_names %>
-
+  <br />
   <a href="/books/new">Add a new book</a>
 </div>
