@@ -7,9 +7,11 @@
         <h3>Title: <%= book.title %></h3>
         <p>Author: <%= book.author %></p>
         <p>Title length: <%= book.title_length %></p>
-        <%= form_for :book, routes.book_path(id: book.id), method: :delete do
-            submit 'Delete'
-        end %>
+        <%=
+          form_for :book, routes.book_path(id: book.id), method: :delete do
+                   submit 'Delete'
+          end
+        %>
       </div>
     <% end %>
   <% else %>
