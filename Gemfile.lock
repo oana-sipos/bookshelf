@@ -9,9 +9,13 @@ GEM
       xpath (~> 2.0)
     coderay (1.1.0)
     dotenv (2.0.2)
+    ffi (1.9.10)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    listen (3.0.3)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
     lotus-controller (0.4.5)
       lotus-utils (~> 0.5)
       lotus-validations (~> 0.3, >= 0.3.3)
@@ -61,6 +65,11 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rerun (0.11.0)
+      listen (~> 3.0)
     sequel (4.28.0)
     shotgun (0.9.1)
       rack (>= 1.0)
@@ -85,3 +94,4 @@ DEPENDENCIES
   pg
   pry
   rake
+  rerun

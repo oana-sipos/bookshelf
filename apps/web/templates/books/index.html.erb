@@ -12,6 +12,11 @@
                    submit 'Delete'
           end
         %>
+        <%=
+          form_for :book, routes.edit_book_path(id: book.id), method: :patch do
+                   submit 'Update'
+          end
+        %>
       </div>
     <% end %>
   <% else %>
