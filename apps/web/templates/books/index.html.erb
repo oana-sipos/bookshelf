@@ -12,11 +12,8 @@
                    submit 'Delete'
           end
         %>
-        <%=
-          form_for :book, routes.edit_book_path(id: book.id), method: :patch do
-                   submit 'Update'
-          end
-        %>
+        <a href="<%= routes.edit_book_path(id: book.id) %>">Update book</a>
+        <a href="<%= routes.book_path(id: book.id) %>">Show book</a>
       </div>
     <% end %>
   <% else %>
